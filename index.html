@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Bebas+Neue&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <title>YUMMY</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ** SideBar Section ** -->
+
+   <aside>
+    <div class="bg-black w-100 p-3 d-flex flex-column justify-content-between position-relative" id="sidebarContent">
+  
+     <ul>
+      <li class="d-flex flex-column">
+        <a href="#" class="text-decoration-none text-white my-2 fade" id="search">Search</a>
+        <a href="#" class="text-decoration-none text-white my-2 fade" id="catogries">Catogries</a>
+        <a href="#" class="text-decoration-none text-white my-2 fade" id="area">Area</a>
+        <a href="#" class="text-decoration-none text-white my-2 fade" id="ingredient">Ingredients</a>
+        <a href="#" class="text-decoration-none text-white my-2 fade" id="contactus">Contact Us</a>
+      </li>
+     </ul>
+  
+     <div class="linksFooter text-white">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-solid fa-earth-europe"></i>
+      <br>
+      <p>Copyright Â© 2019 All Rights
+        Reserved.</p>
+     </div>
+  
+    </div>
+  
+    <div class="bar d-flex flex-column justify-content-between p-2 text-center bg-white">
+      <img class="smile" src="images/smile.Face.png" alt="">
+  
+      <i class="fa-solid fa-bars fs-3" id="navsBar"></i>
+      <i class="fa-solid fa-x fs-3 d-none" id="x-mark"></i>
+   
+      <div class="worldAndShare d-flex flex-column">
+       <i class="fa-solid fa-earth-americas my-2"></i>
+       <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </aside>
+
+
+  <!-- * Search Section * -->
+
+  <section id="searchForm" class="py-4 d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <input grey="grey" type="text" class="form-control bg-transparent text-white" placeholder="Search By Name" onkeyup="getHome('search','s',value)">
+        </div>
+        <div class="col-md-6">
+          <input grey="grey" type="text" class="form-control bg-transparent text-white" placeholder="Search By First Letter" onkeyup="getHome('search','f',value)">
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+  
+<!-- * Default Section ** -->
+
+    <section class="bg-black py-4">
+       <div class="container">
+          <div class="row g-4" id="myData">
+            <div class="col-md-3">
+              <div onclick="getMealsDetails('${arr[i].idMeal'})"></div>
+            </div>
+          </div>
+       </div>
+    </section>  
+
+
+  
+
+  <!-- * Contact Us Section * -->
+
+   <section id="contactusForm" class="bg-black py-5 w-75 mx-auto d-flex justify-content-center align-items-center my-5 d-none">
+
+     <div class="container my-4">
+
+      <div class="row my-5 g-4">
+
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Enter Your Name">
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Enter Your Email">
+        </div>
+
+        <div class="col-md-6">
+          <input type="number" class="form-control" placeholder="Enter Your Phone">
+        </div>
+        <div class="col-md-6">
+          <input type="number" class="form-control" placeholder="Enter Your Age">
+        </div>
+
+        <div class="col-md-6">
+          <input type="password" class="form-control" placeholder="Enter Your password">
+        </div>
+        <div class="col-md-6">
+          <input type="password" class="form-control" placeholder="Enter Your Re-password">
+        </div>
+         
+        <div class="col-md-12 text-center">
+          <button class="btn btn-outline-danger text-danger-emphasis">Submit</button>
+        </div>
+        
+      </div>
+     </div>
+
+  </section>  
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+
+
+
+</html>

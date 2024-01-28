@@ -1,0 +1,70 @@
+.overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 100%;
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* w-100 h-100 d-flex align-items-center */
+}
+.card {
+    overflow: hidden;
+}
+.card:hover .overlay {
+  top: 0%;
+}
+.smile {
+    width: 40px;
+    height: 40px;
+}
+ul li a {
+    text-align: left;
+    opacity: 0;
+}
+
+aside {
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    width: 25%;
+    z-index: 3000;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+}
+body {
+    background-color: black;
+}
+
+button {
+    width: fit-content !important;
+}
+button:hover {
+    background-color: transparent !important;
+}
+input[grey]::placeholder{
+    color: #6C757D!important; /* Color for placeholder text */
+}
+.meal {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.meal:hover .layer {
+    top: 0%;
+  }
+.layer {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 100%;
+    transition: all 0.3s;
+    bottom: 0%;
+    border-radius: 10px;
+}
+.limit-text {
+    width: 15.6rem; /* Set a fixed width for the container */
+    overflow: hidden; /* Hide any overflowing content */
+    height: 13rem;
+
+}
